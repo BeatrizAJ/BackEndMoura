@@ -10,7 +10,7 @@ int opcao;
 do
 {
     Console.Clear();
-    Console.WriteLine(@$"=== SISTEMA BANCÁRIO SIMPLES ===
+    Console.WriteLine(@$"=== SISTEMA BANCÁRIO SIMPLES ===)
 1. Cadastrar Cliente
 2. Depositar
 3. Sacar
@@ -78,7 +78,7 @@ void Depositar()
     //encontrado
     Console.Write($"Valor para deposito: ");
     float valor = float.Parse(Console.ReadLine());
-    saldos[idCliente] = valor;
+    saldos[idCliente] += valor;
     Console.WriteLine($"deposito de R$ {valor:F2} realizado");
 }
 
@@ -94,7 +94,7 @@ void Sacar()
     Console.WriteLine($"Valor para saque: ");
     float valor = float.Parse(Console.ReadLine());
 
-    if (saldos[idCliente] >= valor)
+    if (saldos[idCliente] >= valor && valor > 0)
     {
         saldos[idCliente] -= valor;
         Console.WriteLine($"Saque realizado com sucesso!");
@@ -122,6 +122,18 @@ void Transferir()
 
     Console.WriteLine($"Valor para transferir: ");
     float valor = float.Parse(Console.ReadLine());
+
+    if (saldos[idDestino] >= valor && valor > 0)
+    {
+        saldos[idOrigem] -= valor;
+        saldos[idDestino] += valor;
+        Console.WriteLine($"Transferencia concluida");
+    }
+    else
+    {
+        Console.WriteLine($"Saldo insuficiente!");
+    }
+
 }
 
 void ListarCliente()
