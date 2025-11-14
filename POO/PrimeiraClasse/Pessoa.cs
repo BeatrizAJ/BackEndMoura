@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,9 +20,23 @@ namespace PrimeiraClasse
             
         }
 
-public void Dormir()
-{
-    Console.WriteLine($"ZZZZZZzzzz...!");
-}
+        public void Dormir()
+        {
+            Console.WriteLine($"ZZZZZZzzzz...!");
+        }
+   
+   public int Envelhecer(int _id = 0)
+   {
+            if (_id > 0)
+            {
+                Idade += _id;
+            }
+            else
+            {//add 1 ano a idade
+                Idade++;
+            }
+            
+     } 
+   
     }
 }
