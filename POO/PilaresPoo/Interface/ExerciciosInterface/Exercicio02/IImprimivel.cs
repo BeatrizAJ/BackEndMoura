@@ -1,10 +1,23 @@
+// namespace Exercicio02
+// {
+//     public class IImprimivel
+//     {
+//              public void Imprimir()
+//         {
+//             Console.WriteLine($"Imprimindo...");
+//         }
+//     }
+// }
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
 namespace Exercicio02
 {
-    public class IImprimivel
+    public interface IImprimivel
     {
-             public void Imprimir()
-        {
-            Console.WriteLine($"Imprimindo...");
-        }
+        void imprimir();
     }
 }

@@ -1,0 +1,5 @@
+C:\Users\50765501899\Desktop\BackEndMoura\POO\PilaresPoo\ClassesEstaticas\obj\Debug\net9.0\ClassesEstaticas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\50765501899\Desktop\BackEndMoura\POO\PilaresPoo\ClassesEstaticas\obj\Debug\net9.0\ClassesEstaticas.AssemblyInfoInputs.cache
+C:\Users\50765501899\Desktop\BackEndMoura\POO\PilaresPoo\ClassesEstaticas\obj\Debug\net9.0\ClassesEstaticas.AssemblyInfo.cs
+C:\Users\50765501899\Desktop\BackEndMoura\POO\PilaresPoo\ClassesEstaticas\obj\Debug\net9.0\ClassesEstaticas.csproj.CoreCompileInputs.cache
+C:\Users\50765501899\Desktop\BackEndMoura\POO\PilaresPoo\ClassesEstaticas\obj\Debug\net9.0\ClassesEstaticas.sourcelink.json

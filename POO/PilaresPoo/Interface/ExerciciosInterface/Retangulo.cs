@@ -18,4 +18,3 @@ public Retangulo(float largura, float altura)
     }
 
     }
-}
