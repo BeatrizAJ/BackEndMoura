@@ -23,15 +23,12 @@ namespace CrudMoura.Controllers
 
         public IActionResult Index()
         {
-
-
-            return View();
+           return View();
         }
 
         [HttpGet]
         public IActionResult ListarFrutas()
         {
-
             ViewBag.sacolinha = listaDeFrutas;
             return View();
         }
