@@ -25,7 +25,7 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult ListaNomes()
+    public IActionResult ListarNomes()
     {
       
         string[] nomes = {"Beatriz","Nathalia","Giovanna"};

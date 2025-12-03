@@ -20,20 +20,24 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/50765501899/Desktop/BackEndMoura/MVC/CrudMoura/Views/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlLmNzaHRtbA==
+[C:/Users/50765501899/Desktop/BackEndMoura/MVC/CrudMoura/Views/Frutas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJ1dGFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50765501899/Desktop/BackEndMoura/MVC/CrudMoura/Views/Frutas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJ1dGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50765501899/Desktop/BackEndMoura/MVC/CrudMoura/Views/Frutas/ListarFrutas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJ1dGFzXExpc3RhckZydXRhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/50765501899/Desktop/BackEndMoura/MVC/CrudMoura/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/50765501899/Desktop/BackEndMoura/MVC/CrudMoura/Views/Home/ListaNomes.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXN0YU5vbWVzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/50765501899/Desktop/BackEndMoura/MVC/CrudMoura/Views/Home/ListarFrutas.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXN0YXJGcnV0YXMuY3NodG1s
+[C:/Users/50765501899/Desktop/BackEndMoura/MVC/CrudMoura/Views/Home/ListarNomes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXN0YXJOb21lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/50765501899/Desktop/BackEndMoura/MVC/CrudMoura/Views/Home/MinhaAcao.cshtml]
