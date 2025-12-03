@@ -1,0 +1,162 @@
+/* --- MAIN --- */
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+/* --- PERFIL --- */
+#perfil {
+    background-color: var(--cor-branco);
+    max-width: 900px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Foto de perfil */
+.foto-perfil-bio {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Informações do perfil */
+.perfil-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-preto);
+}
+
+.perfil-info > div {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.formulario-botao-azul {
+    background-color: var(--cor-branco);
+    color: var(--cor-roxo2);
+    padding: 5px 12px;
+    border: 1px solid var(--cor-roxo2);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.publi {
+    font-size: var(--tamanho-fonte-md);
+    color: var(--cor-roxo2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- PUBLICAÇÕES --- */
+#publicacoes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    gap: 25px;
+}
+
+.card-publicacao {
+    background-color: var(--cor-branco);
+    width: 85%;
+    max-width: 800px;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.card-publicacao.destaque {
+    border: 2px solid var(--cor-roxo2);
+}
+
+/* Cabeçalho do card */
+.autor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color: var(--cor-preto);
+}
+
+.autor img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-publicacao p {
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-sm);
+}
+
+/* Ações */
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.acoes img {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.ver-comentarios {
+    color: gray;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.ver-comentarios:hover {
+    text-decoration: underline;
+}
+
+/* --- RESPONSIVIDADE MOBILE --- */
+@media (max-width: 600px) {
+
+    #perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .perfil-info > div {
+        justify-content: center;
+    }
+
+    .formulario-botao-azul {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-publicacao {
+        width: 95%;
+    }
+
+    .foto-perfil-bio {
+        width: 120px;
+        height: 120px;
+    }
+}
