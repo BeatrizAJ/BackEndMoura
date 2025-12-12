@@ -1,40 +1,51 @@
+@model DevConnect.Models.TbUsuario
+
 @{
     ViewData["Title"] = "Cadastros";
 }
+<script defer>
+    let usuarioNovoCadastro = "@ViewBag.UsuarioNovoCadastrado";
+
+    if (usuarioNovoCadastro == "Nao cadastrado") {
+        alert("Não foi possivel cadastrar esse usuario :/...Fale com um dos nossos administradores");
+    }
+</script>
+
 
 <link rel="icon" href="~/images/logo-devconnect-sm.svg" type="image/svg+xml">
 <link rel="stylesheet" href="~/css/login.css">
 <link rel="stylesheet" href="~/css/global.css">
 
+
 <main>
     <div>
-        <form class="estilo-formulario">
+        <form class="estilo-formulario" asp-action="Index" asp-controller="Usuario" enctype="multipart/form-data">
             <img src="~/images/logo-devconnect-lg.svg" alt="">
             <p> Cadastre-se para comunidade exclusiva de desenvolvedores(as)</p>
 
             <div class="formulario-campos">
                 <label for="nome">Nome e Sobrenome:</label>
-                <input type="text" name="nome" id="nome">
+                <input type="text" asp-for="NomeCompleto" id="nome">
             </div>
 
             <div class="formulario-campos">
                 <label for="usuario">Nome de usuário:</label>
-                <input type="text" name="usuario" id="usuario">
+                <input type="text" asp-for="NomeUsuario" id="usuario">
             </div>
 
             <div class="formulario-campos">
                 <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email">
+                <input type="email" asp-for="Email" id="email">
             </div>
 
             <div class="formulario-campos">
                 <label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha">
+                <input type="password" asp-for="Senha" id="senha">
             </div>
 
             <div>
                 <label for="campo-upload" id="texto-upload">Faça o upload da imagem aqui...</label>
-                <input type="file" name="imagem" id="campo-upload">
+                <input type="file" name="Imagem" id="campo-upload" accept="image/*">
             </div>
 
             <button type="submit">Cadastrar-se</button>
